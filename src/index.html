@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="fixed bg-white flex flex-row items-center py-3 w-full justify-between">
+        <div class="left flex flex-row items-center">
+            <img class="mx-4" src="/logo.png" alt="">
+            <i class="fa-solid mr-2 rotate-45 text-white bg-black p-1 rounded-3xl fa-up-down"></i>
+            <h1 class="font-semibold desktop:block tablet:hidden">Popular</h1>
+        </div>
+        <div class="right w-2/3 relative flex justify-end">
+            <i class="fa-solid absolute top-3 desktop:left-16 tablet:left-12 pl-4 text-gray-300 fa-magnifying-glass"></i>
+            <input class="border desktop:w-96 tablet:w-44 bg-gray-100 hover:bg-white hover:border-blue-400 py-2 pl-10 rounded-full"
+                placeholder="Search Reddit" type="email" name="" id="">
+            <a class="border ml-3 rounded-full desktop:block tablet:hidden hover:bg-blue-100 px-12 py-2 text-blue-600 font-semibold border-blue-600"
+                href="">Sign Up</a>
+            <a class="bg-blue-600 ml-3 desktop:block tablet:hidden rounded-full px-16 hover:bg-blue-400 font-semibold py-2 text-white" href="">Log
+                In</a>
+            <i
+                class="fa-solid hover:border rounded text-center flex items-center justify-center px-4 pt-3 fa-user text-xl text-gray-600 ml-5">
+                <i class="fa-solid fa-chevron-down"></i>
+            </i>
+        </div>
+    </nav>
+    <div class="left mt-16 desktop:fixed desktop:block tablet:hidden flex flex-col h-full w-56">
+        <h1 class="text-xs pl-5 pt-5 text-gray-500">Feeds</h1>
+        <h1 class="pl-5 hover:bg-gray-100 pt-3 flex text-base font-light flex-row items-center ">
+            <i class="fa-solid mr-4 text-lg fa-house"></i>
+            Home
+        </h1>
+        <h1 class="pl-5 hover:bg-gray-100 pt-3 flex text-base font-light flex-row items-center">
+            <i class="fa-solid mr-4 text-lg fa-paperclip"></i>
+            Popular
+        </h1>
+        <h1 class="text-xs pl-5 pb-3 pt-6 text-gray-500">Topics</h1>
+        <div class="gaming hover:bg-gray-100 py-2 pl-5 flex flex-row items-center justify-between">
+            <h1 class="text-base">
+                <i class="fa-solid mr-3 fa-gamepad"></i>
+                Gaming
+            </h1>
+            <i class="fa-solid pr-5 text-lg fa-chevron-down"></i>
+        </div>
+        <div class="gaming hover:bg-gray-100 py-2 pl-5 flex flex-row items-center justify-between">
+            <h1 class="text-base">
+                <i class="fa-solid mr-3 fa-bowling-ball"></i>
+                Sports
+            </h1>
+            <i class="fa-solid pr-5 text-lg fa-chevron-down"></i>
+        </div>
+        <div class="gaming hover:bg-gray-100 py-2 pl-5 flex flex-row items-center justify-between">
+            <h1 class="text-base">
+                <i class="fa-brands mr-3 fa-bitcoin"></i>
+                Business, Ec...
+            </h1>
+            <i class="fa-solid pr-5 text-lg fa-chevron-down"></i>
+        </div>
+        <div class="gaming hover:bg-gray-100 py-2 pl-5 flex flex-row items-center justify-between">
+            <h1 class="text-base">
+                <i class="fa-solid mr-3 fa-bolt"></i>
+                Crypto
+            </h1>
+            <i class="fa-solid pr-5 text-lg fa-chevron-down"></i>
+        </div>
+        <div class="gaming hover:bg-gray-100 py-2 pl-5 flex flex-row items-center justify-between">
+            <h1 class="text-base">
+                <i class="fa-solid mr-3 fa-film"></i>
+                Television
+            </h1>
+            <i class="fa-solid pr-5 text-lg fa-chevron-down"></i>
+        </div>
+        <div class="gaming hover:bg-gray-100 py-2 pl-5 flex flex-row items-center justify-between">
+            <h1 class="text-base">
+                <i class="fa-solid mr-3 fa-star"></i>
+                Celebrity
+            </h1>
+            <i class="fa-solid pr-5 text-lg fa-chevron-down"></i>
+        </div>
+        <div class="gaming hover:bg-gray-100 py-2 pl-5 flex flex-row items-center justify-between">
+            <h1 class="text-base">
+                <i class="fa-solid mr-3 fa-sliders"></i>
+                More Topics
+            </h1>
+            <i class="fa-solid pr-5 text-lg fa-chevron-down"></i>
+        </div>
+        <div class="ashaghi">
+            <h1 style="width: 85%;" class="text-gray-400 font-normal text-sm my-4 pl-5">Create an account to follow your favorite communities and start taking part in conversations.</h1>
+            <a class="bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-full py-3 px-14 ml-3 mt-7" href="">Join Reddit</a>
+        </div>
+    </div>
+    <div class="desktop:ml-[225px] bg-[#dae0e6] pb-44 flex">
+        <div class="desktop:mt-24 tablet:mt-20 desktop:ml-10 text-gray-500">
+        <h1 class="tablet:pl-8">Trending today</h1>  
+        <div class="cards desktop:mt-10 tablet:mt-2 desktop:pl-0 tablet:pl-8 flex flex-row">
+            <div style="box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; background-image: url(/photos/card1.webp); background-size: cover; background-position: center;" class="card1 desktop:w-60 tablet:w-[411px] h-44 rounded-lg mr-7 cursor-pointer">
+                <h2 style="margin-top: 87px;" class="font-bold text-white text-xl ml-2">Mark Kelly</h2>
+                <h1 class="w-56 text-white font-light ml-2">Democratic Sen. Mark Kelly re-elected in Arizona, defeating...</h1>
+            </div>
+            <div style="box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; background-image: url(/photos/card2.webp); background-size: cover; background-position: center;" class="card1 desktop:block tablet:hidden w-60 h-44 rounded-lg mr-7 cursor-pointer">
+                <h2 style="margin-top: 87px;" class="font-bold text-white text-xl ml-2">Dogs</h2>
+                <h1 class="w-56 text-white font-light ml-2">My dog Keith sits like a human and watches tv.</h1>
+            </div>
+            <div style="box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; background-image: url(/photos/card3.webp); background-position: center; background-size: cover;" class="card1 desktop:block tablet:hidden w-60 h-44 rounded-lg mr-7 cursor-pointer">
+                <h2 style="margin-top: 87px;" class="font-bold text-white text-xl ml-2">Jan. 6 Committe</h2>
+                <h1 class="w-56 text-white font-light ml-2">Trump sues Jan. 6 committee over subpoena compelling...</h1>
+            </div>
+            <div style="box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; background-image: url(/photos/card4.webp);background-position: center; background-size: cover;" class="card1 desktop:block tablet:hidden w-60 h-44 rounded-lg mr-7 cursor-pointer" >
+                <h2 style="margin-top: 87px;" class="font-bold text-white text-xl ml-2">Apple</h2>
+                <h1 class="w-56 text-white font-light ml-2">Apple Sued Over 'Deceptive' Privacy Settings After Gizmodo</h1>
+            </div>
+        </div> 
+        <h1 class="desktop:mt-9 desktop:ml-2 tablet:mt-5">Popular posts</h1>  
+        <div class="flex flex-row">
+            <div class="left desktop:w-3/5 desktop:mr-14 tablet:mr-0">
+                <div class="box flex mt-3 border border-gray-50 desktop:py-4 tablet:py-2 rounded-lg bg-white">
+                    <h1 class="mr-2 ml-2 pl-2 border cursor-pointer rounded-full bg-blue-50 text-blue-400 hover:bg-blue-100 px-3 flex items-center justify-center">
+                        <i class="fa-solid mr-1 fa-ghost"></i>
+                    Hot
+                    </h1>
+                    <h1 class="mr-2 border rounded-full bg-blue-50 cursor-pointer text-blue-400 hover:bg-blue-100 px-2 flex items-center">
+                        Everywhere
+                        <i class="fa-solid ml-1 fa-chevron-down"></i>
+                    </h1>
+                    <h1 class="rounded-full cursor-pointer hover:bg-gray-100 px-2">
+                        <i class="fa-solid fa-filter"></i>
+                        New
+                    </h1>
+                    <h1 class="rounded-full cursor-pointer hover:bg-gray-100 px-2">
+                        <i class="fa-brands fa-dropbox"></i>
+                        Top
+                    </h1>
+                    <h1 class="mr-1 cursor-pointer rounded-full hover:bg-gray-100 px-2">
+                    <i class="fa-solid fa-list"></i>
+                    </h1>
+                    <h1 class="desktop:ml-56 tablet:ml-0">
+                        <i class="fa-solid fa-pen"></i>
+                    </h1>
+                </div>
+                <div class="firstcontent border bg-white hover:border-black mt-5 pb-5 rounded-md">
+                    <div class="top pt-3 pl-3 flex flex-row items-center">
+                        <img class="w-6 rounded-full mr-3" src="/photos/contentpic.png" alt="">
+                        <a class="mr-2 tablet:text-[10px] hover:underline decoration-1 text-black" href="">r/AskReddit</a>
+                        <a class="mr-2 tablet:text-[10px] hover:underline desktop:w-[76px] decoration-1 tablet:w-[100px] " href="">• Posted by u/Yeetthyself64 •</a>
+                        <h1 class="cursor-pointer text-[10px]"> 12 hours ago</h1>
+                        <a class="rounded-full bg-blue-400 text-white font-semibold desktop:px-3 desktop:flex desktop:pl-2 desktop:w-32 desktop:ml-56 tablet:ml-44 desktop:text-[15px] deskto:py-1 tablet:py-2 tablet:text-[10px] tablet:w-[60px] tablet:flex tablet:justify-center tablet:items-center tablet:-mt-0 tablet:mr-5" href="">Join now</a>
+                    </div>
+                    <div class="mid">
+                        <h1 class="text-lg font-semibold ml-10 text-black">What job contributes nothing to society?</h1>
+                    </div>
+                    <div class="bott ml-10 mt-1">
+                        <a class="hover:underline decoration-1 mr-2" href="">
+                            <i class="fa-solid fa-comment"></i>
+                            Comments
+                        </a>
+                        <a class="hover:underline decoration-1 " href="">
+                            <i class="fa-solid fa-share"></i>
+                            Share
+                        </a>
+                        <a class="hover:underline decoration-1 ml-2" href="">
+                            <i class="fa-solid fa-floppy-disk"></i>
+                            Save
+                        </a>
+                    </div>
+                </div>
+                <div class="second border bg-white hover:border-black mt-2 pb-5 rounded-md">
+                    <div class="top pt-3 desktop:pl-3 tablet:pl-0 flex flex-row items-center">
+                        <img class="w-6 rounded-full desktop:mr-3 tablet:mr-0" src="/photos/secondcontent.png" alt="">
+                        <a class="mr-2 hover:underline decoration-1 desktop:text-[15px] tablet:text-[10px] text-black" href="">r/mildlyinsa</a>
+                        <a class="mr-2 hover:underline decoration-1 desktop:text-[15px] tablet:text-[10px]" href="">• Posted by u/Yeetthyself64 •</a>
+                        <h1 class="cursor-pointer tablet:text-[10px] desktop:text-[15px]"> 12 hours ago</h1>
+                        <a class="rounded-full bg-blue-400 text-white font-semibold px-3 desktop:ml-20 tablet:ml-28 py-1" href="">Join now</a>
+                    </div>
+                    <div class="mid"> 
+                        <h1 class="text-lg font-semibold desktop:ml-10 desktop:w-auto tablet:w-96 tablet:ml-0 text-black">Food prices in Northern Canada. I can no longer afford to eat proper meals.</h1>
+                        <img class="w-96 desktop:ml-32 tablet:ml-[55px]" src="/photos/secondmain.webp" alt="">
+                    </div>
+                    <div class="bott ml-10 mt-5">
+                        <a class="hover:underline decoration-1 mr-2" href="">
+                            <i class="fa-solid fa-comment"></i>
+                            Comments
+                        </a>
+                        <a class="hover:underline decoration-1 " href="">
+                            <i class="fa-solid fa-share"></i>
+                            Share
+                        </a>
+                        <a class="hover:underline decoration-1 ml-2" href="">
+                            <i class="fa-solid fa-floppy-disk"></i>
+                            Save
+                        </a>
+                    </div>
+                </div>
+                <div class="third border bg-white hover:border-black mt-2 pb-5 rounded-md">
+                    <div class="top pt-3 pl-3 flex flex-row items-center">
+                        <img class="w-6  rounded-full mr-3" src="/photos/thirdprofilepic.png" alt="">
+                        <a class="mr-2 desktop:text-[15px] tablet:text-[10px] hover:underline decoration-1 text-black" href="">r/mildlyinsa</a>
+                        <a class="mr-2 desktop:text-[15px] tablet:text-[10px] desktop:w- hover:underline decoration-1" href="">• Posted by u/Yeetthyself64 •</a>
+                        <h1 class="cursor-pointer desktop:text-[15px] tablet:text-[10px]"> 12 hours ago</h1>
+                        <a class="rounded-full bg-blue-400 text-white font-semibold px-3 ml-20 py-1" href="">Join now</a>
+                    </div>
+                    <div class="mid">
+                        <h1 class="text-lg font-semibold desktop:ml-10 tablet:ml-0 text-black">meirl</h1>
+                        <img class="w-96 desktop:ml-32 tablet:ml-[55px]" src="/photos/third.webp" alt="">
+                    </div>
+                    <div class="bott ml-10 mt-5">
+                        <a class="hover:underline decoration-1 mr-2" href="">
+                            <i class="fa-solid fa-comment"></i>
+                            Comments
+                        </a>
+                        <a class="hover:underline decoration-1 " href="">
+                            <i class="fa-solid fa-share"></i>
+                            Share
+                        </a>
+                        <a class="hover:underline decoration-1 ml-2" href="">
+                            <i class="fa-solid fa-floppy-disk"></i>
+                            Save
+                        </a>
+                    </div>
+                </div>
+                <div class="fourth border bg-white hover:border-black mt-2 pb-5 rounded-md">
+                    <div class="top pt-3 pl-3 flex flex-row items-center">
+                        <img class="w-6 rounded-full mr-3" src="/photos/foursprofile.png" alt="">
+                        <a class="mr-2 desktop:text-[15px] tablet:text-[10px] hover:underline decoration-1 text-black" href="">r/mildlyinsa</a>
+                        <a class="mr-2 desktop:text-[15px] tablet:text-[10px] hover:underline decoration-1" href="">• Posted by u/Yeetthyself64 •</a>
+                        <h1 class="cursor-pointer desktop:text-[15px] tablet:text-[10px]"> 12 hours ago</h1>
+                        <a class="rounded-full bg-blue-400 text-white font-semibold px-3 ml-20 py-1" href="">Join now</a>
+                    </div>
+                    <div class="mid">
+                        <h1 class="text-lg font-semibold desktop:ml-10 tablet:ml-0 text-black">Gee thanks guys [news article in comments)</h1>
+                        <img class="w-96 desktop:ml-32 tablet:ml-[55px]" src="/photos/fourmain.jpg" alt="">
+                    </div>
+                    <div class="bott ml-10 mt-5">
+                        <a class="hover:underline decoration-1 mr-2" href="">
+                            <i class="fa-solid fa-comment"></i>
+                            Comments
+                        </a>
+                        <a class="hover:underline decoration-1 " href="">
+                            <i class="fa-solid fa-share"></i>
+                            Share
+                        </a>
+                        <a class="hover:underline decoration-1 ml-2" href="">
+                            <i class="fa-solid fa-floppy-disk"></i>
+                            Save
+                        </a>
+                    </div>
+                </div>
+                <div class="fivth border bg-white hover:border-black mt-2 pb-5 rounded-md">
+                    <div class="top pt-3 pl-3 flex flex-row items-center">
+                        <img class="w-6 rounded-full mr-3" src="/photos/fivthprofile.jpg" alt="">
+                        <a class="mr-2 tablet:text-[10px] desktop:-[15px] hover:underline decoration-1 text-black" href="">r/mildlyinsa</a>
+                        <a class="mr-2 tablet:text-[10px] desktop:-[15px] hover:underline decoration-1" href="">• Posted by u/Yeetthyself64 •</a>
+                        <h1 class="cursor-pointer tablet:text-[10px] desktop:-[15px]"> 12 hours ago</h1>
+                        <a class="rounded-full bg-blue-400 text-white font-semibold px-3 ml-20 py-1" href="">Join now</a>
+                    </div>
+                    <div class="mid">
+                        <h1 class="text-lg font-semibold desktop:ml-10 tablet:ml-0 text-black">"I promise I will never knock anything off the counter. Scout's honor!"</h1>
+                        <img class="w-96 desktop:ml-32 tablet:ml-[55px]" src="/photos/fivthmain.webp" alt="">
+                    </div>
+                    <div class="bott ml-10 mt-5">
+                        <a class="hover:underline decoration-1 mr-2" href="">
+                            <i class="fa-solid fa-comment"></i>
+                            Comments
+                        </a>
+                        <a class="hover:underline decoration-1 " href="">
+                            <i class="fa-solid fa-share"></i>
+                            Share
+                        </a>
+                        <a class="hover:underline decoration-1 ml-2" href="">
+                            <i class="fa-solid fa-floppy-disk"></i>
+                            Save
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="right desktop:block tablet:hidden w-1/4">
+                <div style="background-image: url(/photos/banner-background.png); background-position: center;" class="withbg w-68  h-14 mt-3 rounded-t-md">
+                    <h1 class="pt-6 pl-2 text-white">Top Aww Communities</h1>
+                </div>
+                <div style="height: 420px;" class="lines bg-white">
+                    <div class="linee pt-2 flex h-12 items-center flex-row">
+                        <h1 class="mr-2 ml-2">1</h1>
+                        <img class="w-8 mr-2 rounded-full" src="/photos/right c1.png" alt="">
+                        <a href="">r/wholesomememe</a>
+                        <button class="rounded-full bg-blue-400 text-white px-3 ml-2">Join</button>
+                    </div>
+                    <div style="height: 0.5px;" class="xett bg-slate-300 my-2 w-68"></div>
+                    <div class="linee flex h-12 items-center flex-row">
+                        <h1 class="mr-2 ml-2">2</h1>
+                        <img class="w-8 mr-2 rounded-full" src="/photos/right c5.png" alt="">
+                        <a href="">r/wholesomememe</a>
+                        <button class="rounded-full bg-blue-400 text-white px-3 ml-2">Join</button>
+                    </div>
+                    <div style="height: 0.5px;" class="xett bg-slate-300 my-2 w-68"></div>
+                    <div class="linee flex h-12 items-center flex-row">
+                        <h1 class="mr-2 ml-2">3</h1>
+                        <img class="w-8 mr-2 rounded-full" src="/photos/right c3.png" alt="">
+                        <a href="">r/wholesomememe</a>
+                        <button class="rounded-full bg-blue-400 text-white px-3 ml-2">Join</button>
+                    </div>
+                    <div style="height: 0.5px;" class="xett bg-slate-300 my-2 w-68"></div>
+                    <div class="linee flex h-12 items-center flex-row">
+                        <h1 class="mr-2 ml-2">4</h1>
+                        <img class="w-8 mr-2 rounded-full" src="/photos/t c4.png" alt="">
+                        <a href="">r/wholesomememe</a>
+                        <button class="rounded-full bg-blue-400 text-white px-3 ml-2">Join</button>
+                    </div>
+                    <div style="height: 0.5px;" class="xett bg-slate-300 my-2 w-68"></div>
+                    <div class="linee flex h-12 items-center flex-row">
+                        <h1 class="mr-2 ml-2">5</h1>
+                        <img class="w-8 mr-2 rounded-full" src="/photos/right c5.png" alt="">
+                        <a href="">r/wholesomememe</a>
+                        <button class="rounded-full bg-blue-400 text-white px-3 ml-2">Join</button>
+                    </div>
+                    <a class="w-60 text-center rounded-full bg-blue-400 flex items-center ml-4 text-white my-3 py-2 justify-center" href="">View All</a>
+                    <div class="tags mt-4 flex flex-row items-center justify-around">
+                        <a class="text-blue-500 bg-blue-50 hover:bg-blue-200 rounded-full font-semibold px-2 " href="">Top</a>
+                        <a class="text-blue-500 bg-blue-50 hover:bg-blue-200 rounded-full font-semibold px-2 " href="">Near You</a>
+                        <a class="text-blue-500 bg-blue-50 hover:bg-blue-200 rounded-full font-semibold px-2 " href="">News</a>
+                        <a class="text-blue-500 bg-blue-50 hover:bg-blue-200 rounded-full font-semibold px-2 " href="">Sports</a>
+                    </div>               
+                </div>
+                <div class="moretags rounded-sm border bg-white mt-3 ">
+                    <h1 class="pt-2 pl-3 text-black text-sm">POPULAR COMMUNITIES</h1>
+                    <div class="linkkkkk mt-3 flex pl-3 flex-wrap w-64 justify-between">
+                        <a class="hover:underline decoration-1" href="">AskReddit</a>
+                        <a class="hover:underline decoration-1" href="">NoStupidQuestions</a>
+                        <a class="hover:underline decoration-1 mr-1" href="">DestinyTheGame</a>
+                        <a class="hover:underline decoration-1 mr-1" href="">AskMen</a>
+                        <a class="hover:underline decoration-1" href="">explainlikeimfive</a>
+                        <a class="hover:underline decoration-1" href="">leagueoflegends</a>
+                        <a class="hover:underline decoration-1" href="">Minecraft</a>
+                    </div>
+                    <h1 class="text-blue-500 hover:bg-blue-100 cursor-pointer rounded-full w-28 font-semibold mt-3 pl-3 ">SEE MORE</h1>
+                    <div class="lists">
+                        <div class="gambl text-sm text-black font-semibold flex flex-row px-3 py-3 justify-between">
+                            <h1>Gaming</h1>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div style="height: 0.5px;" class="xett bg-slate-300 w-68"></div>
+                        <div class="gambl text-sm text-black font-semibold flex flex-row px-3 py-3 justify-between">
+                            <h1>Health & Fitness</h1>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div style="height: 0.5px;" class="xett bg-slate-300 w-68"></div>
+                        <div class="gambl text-sm text-black font-semibold flex flex-row px-3 py-3 justify-between">
+                            <h1>Sports</h1>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div style="height: 0.5px;" class="xett bg-slate-300 w-68"></div>
+                        <div class="gambl text-sm text-black font-semibold flex flex-row px-3 py-3 justify-between">
+                            <h1>TV</h1>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div style="height: 0.5px;" class="xett bg-slate-300 w-68"></div>
+                        <div class="gambl text-sm text-black font-semibold flex flex-row px-3 py-3 justify-between">
+                            <h1>Travel</h1>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div style="height: 0.5px;" class="xett bg-slate-300 w-68"></div>
+                        <div class="gambl text-sm text-black font-semibold flex flex-row px-3 py-3 justify-between">
+                            <h1>Fashion</h1>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="agreement rounded-sm border bg-white mt-3 ">
+                    <div class="smth my-3 pl-2 flex flex-wrap justify-between w-56">
+                        <a class="hover:underline decoration-1" href="">User Agreement</a>
+                        <a class="hover:underline decoration-1" href="">Content Policy</a>
+                        <a class="hover:underline decoration-1" href="">Privacy Policy</a>
+                        <a class="hover:underline decoration-1" href="">Moderator Code Of Conduct</a>
+                    </div>
+                    <div style="height: 0.5px;" class="xett bg-slate-300 w-68"></div>
+                    <div class="lang pl-2 pb-3 flex flex-wrap justify-between w-56 mt-3">
+                        <a class="hover:underline decoration-1" href="">English</a>
+                        <a class="hover:underline decoration-1" href="">Français</a>
+                        <a class="hover:underline decoration-1" href="">Italiano</a>
+                        <a class="hover:underline decoration-1" href="">Deutsch</a>
+                        <a class="hover:underline decoration-1" href="">Español</a>
+                        <a class="hover:underline decoration-1" href="">Português</a>
+                    </div>
+                    <div style="height: 0.5px;" class="xett bg-slate-300 w-68"></div>
+                    <h1 class="pl-2 w-64 mb-2 mt-3 text-sm">Reddit Inc © 2022. All rights reserved</h1>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+
+</html>
